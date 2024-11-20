@@ -1,3 +1,1 @@
 # mlops-class
-
-dev-krystian
