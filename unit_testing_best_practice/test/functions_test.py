@@ -12,3 +12,6 @@ def test_password():
 
 def test_email():
 	assert not validate_email('emailgmail.com') and not validate_email('email@gmailcom')
+
+def test_password2():
+	assert validate_password('asdfghj1_')
