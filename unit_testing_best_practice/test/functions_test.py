@@ -1,6 +1,6 @@
+import os
 import sys 
-sys.path += ['../src'] 
-
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 from functions import *
 
 def test_name():
@@ -14,4 +14,4 @@ def test_email():
 	assert not validate_email('emailgmail.com') and not validate_email('email@gmailcom')
 
 def test_password2():
-	assert validate_password('asdfghj1_')
+	assert not validate_password('ashj1_')

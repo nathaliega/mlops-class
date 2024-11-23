@@ -1,5 +1,6 @@
 import sys 
-sys.path += ['../src'] 
+import os
+sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'src'))
 
 from prime import *
 
