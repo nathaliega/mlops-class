@@ -3,7 +3,7 @@ import re
 def validate_name(name):
 	return len(name) > 0 and ' ' not in name
 
-def validate_password(password):
+def validate_pswd(password):
 	return len(password) >= 8 and re.match(r"[0-9]", password) and re.match(r"[a-z][A-Z]", password) and  re.match(r'.*[!@#$%^&*(),.?":{}|<>].*', password)
 
 def validate_email(email):
